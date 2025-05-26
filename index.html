@@ -4,10 +4,118 @@ layout: default
 
 <!DOCTYPE html>
 <html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marxist School of Sacramento</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f4f2;
+      color: #2d2d2d;
+    }
+
+    header {
+      background-color: #7a1f1f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #992222;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #b53131;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    footer {
+      background-color: #7a1f1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
 <body>
-  <p>
-    Test paragraph
-  </p>
+  <header>
+    <h1>Marxist School of Sacramento</h1>
+  </header>
+
+  <nav>
+    <a href="#" onclick="showSection('home')">Home</a>
+    <a href="#" onclick="showSection('about')">About</a>
+    <a href="#" onclick="showSection('projects')">Projects</a>
+    <a href="#" onclick="showSection('newsletter')">Newsletter</a>
+    <a href="#" onclick="showSection('contact')">Contact Us</a>
+  </nav>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome</h2>
+      <p>Welcome to the Marxist School of Sacramento. We offer education, discussion, and action rooted in historical materialist analysis.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>The Marxist School of Sacramento is dedicated to spreading the principles of Marxism through public lectures, workshops, and study groups.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Learn about our ongoing projects including community education, mutual aid, and direct action campaigns.</p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Newsletter</h2>
+      <p>Sign up for our newsletter to stay updated on upcoming events, new classes, and articles from our members.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us at <a href="mailto:info@marxistschool.org">info@marxistschool.org</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Marxist School of Sacramento</p>
+  </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('main section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
   
 </html>
