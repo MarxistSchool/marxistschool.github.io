@@ -31,13 +31,13 @@ nav a:focus {
   background-color: #b53131;
 }
 
-gallery {
+.gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
       margin-top: 2rem;
     }
-gallery img {
+.gallery img {
       width: 100%;
       height: auto;
       border-radius: 8px;
