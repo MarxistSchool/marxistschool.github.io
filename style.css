@@ -60,6 +60,12 @@ main {
   padding: 2rem;
 }
 
+aside {
+  width: 20%;
+  float: right;
+  padding: 0.5rem;
+}
+
 footer {
   background-color: #7a1f1f;
   color: white;
